@@ -133,7 +133,7 @@ def main():
     #st.image("banner.png", use_column_width=True)
 
     st.title('EVENTBRITE EVENT SCRAPER 🎈')
-    st.markdown('''
+    st.info('''
     Paste an organizer URL or URLs and get all the upcoming events. If you are pasting multiple URLs make sure to seperate with (;)
     Example: link_1; link_2; link_3; ......link_x
     ''')
