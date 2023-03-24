@@ -3,3 +3,4 @@ pandas
 beautifulsoup4
 latest_user_agents
 streamlit
+lxml
