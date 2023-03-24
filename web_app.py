@@ -134,13 +134,15 @@ def main():
 
     st.title('EVENTBRITE EVENT SCRAPER 🎈')
     st.info('''
-    Paste an organizer URL or URLs and get all the upcoming events. If you are pasting multiple URLs make sure to seperate with (;)
-    Example: link_1; link_2; link_3; ......link_x
+    Paste an organizer URL or URLs and get all the upcoming events. If you are pasting multiple URLs make sure to seperate with (;).
     ''')
 
 
     with st.form('scraper form'):
-        organiser_links = st.text_area('Organizer URL(s)')
+        organiser_links = st.text_area('Organizer URL(s)', placeholder = '''
+        https://www.eventbrite.com/o/the-inside-out-wisdom-and-action-project-33736776827;
+        https://www.eventbrite.com/o/affordable-art-fair-nyc-16057474978;
+        ''')
         organiser_link = organiser_links.split(';')
         scrape = st.form_submit_button('Scrape')
 
