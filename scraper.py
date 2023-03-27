@@ -25,7 +25,7 @@ def get_organiser(organiser_link):
     df.to_csv('sample_data.csv', index=False)
 
 def get_data(json_data, image_url):
-    data = json.loads(json_data)
+    data = json.loads(json_data, strict=False)
     organiser_name = data['organizer']['displayOrganizationName']
     event_name = data['event']['name']
     start_date = data['event']['start']['utc']
